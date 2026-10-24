@@ -1,12 +1,49 @@
-# goit-js-hw-02
+# GoIT JavaScript Homework 2
 
-GoIT JavaScript Homework 2.
+## Завдання
 
-## Tasks
+### Task 1 — Замовлення дроїдів
 
-1. `makeTransaction(quantity, pricePerDroid, customerCredits)` — checks whether the customer has enough credits for the order.
-2. `formatMessage(message, maxLength)` — returns the original message or truncates it and appends `...`.
-3. `checkForSpam(message)` — checks for `spam` or `sale`, regardless of letter case.
-4. `getShippingCost(country)` — returns the shipping cost for supported countries using `switch`.
+Функція `makeTransaction(quantity, pricePerDroid, customerCredits)` обчислює
+загальну вартість замовлення та перевіряє, чи достатньо коштів на рахунку
+клієнта. Якщо коштів недостатньо, повертає повідомлення `"Insufficient funds!"`.
 
-Open `index.html` in a browser and check the output in DevTools → Console.
+### Task 2 — Форматування повідомлення
+
+Функція `formatMessage(message, maxLength)` перевіряє довжину повідомлення. Якщо
+вона перевищує максимально допустиму довжину, рядок обрізається за допомогою
+`slice()` і доповнюється трикрапкою `"..."`.
+
+### Task 3 — Перевірка спаму
+
+Функція `checkForSpam(message)` перевіряє наявність слів `spam` або `sale` у
+повідомленні незалежно від регістру літер. Повертає `true`, якщо знайдено хоча б
+одне із цих слів, інакше — `false`.
+
+### Task 4 — Доставка товару
+
+Функція `getShippingCost(country)` визначає вартість доставки залежно від країни
+за допомогою інструкції `switch`. Якщо доставка до країни недоступна, повертає
+відповідне повідомлення.
+
+## Структура проєкту
+
+- `js/task-1.js` — замовлення дроїдів
+- `js/task-2.js` — форматування повідомлення
+- `js/task-3.js` — перевірка спаму
+- `js/task-4.js` — доставка товару
+- `index.html` — HTML-файл проєкту
+- `.gitignore` — файли та директорії, виключені з Git
+- `.prettierrc` — налаштування форматування коду
+
+## Технології
+
+- JavaScript
+- HTML5
+- Git
+- Prettier
+
+## Перевірка
+
+Результати виконання функцій перевіряються за допомогою викликів
+`console.log()`, наведених у кожному завданні.
